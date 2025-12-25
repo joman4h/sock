@@ -1,0 +1,64 @@
+/* LINE LIMIT: 300. DELETE BEFORE ADDING. */
+
+:root {
+  --bg: #0f1115;
+  --panel: #161a22;
+  --text: #e6e6e6;
+  --accent: #7dd3fc;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#app {
+  width: 600px;
+  background: var(--panel);
+  padding: 24px;
+  border-radius: 12px;
+}
+
+#stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 16px;
+}
+
+#story {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+#choices button {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--text);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#choices button:hover {
+  background: rgba(125, 211, 252, 0.1);
+}
+#choices button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent);
+}
